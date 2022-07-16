@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+
+  /* Properti Tambahan */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.button {
+  flex-basis: 25%;
+
+  /* Properti Tambahan */
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
+  border: 5px solid black;
+  background: -webkit-linear-gradient(top, #D2D2D2, #DDD);
+  cursor: pointer;
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+/* Output Kalkulator */
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: green;
+  border: 10px solid blue;
+  font-size: 25px;
+}
+
+/* Tombol Operator */
+.operator, .negative, .equals {
+  background: orange;
+}
+
+/* Card Button */
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+/* Button */
+.button:hover {
+  font-weight: bold;
+}
+
+/* Device Lain */
+@media screen and (max-width: 630px) {
+  .button {
+    padding: 20px;
+  }
+}
